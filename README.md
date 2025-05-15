@@ -170,4 +170,3 @@ kubectl describe node $(hostname)
 ```bash
 kubectl logs -n kube-system <pod-name>
 ```
-- This should get your Kubernetes cluster fully operational on AWS EC2 Ubuntu 
