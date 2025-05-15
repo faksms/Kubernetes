@@ -4,7 +4,7 @@
 
 ## Docker & Kubernetes Installation Script
 
-This Bash script automates the installation of Docker and Kubernetes components, including `cri-dockerd`. It ensures that necessary dependencies are installed and services are properly configured.
+Below steps are the installation of Docker and Kubernetes components, including `cri-dockerd`. It ensures that necessary dependencies are installed and services are properly configured.
 
 ## High Level Steps
 
