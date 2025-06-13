@@ -1,0 +1,45 @@
+Key Features:
+
+AWS Authentication: Uses default credential chain (configure using aws configure)
+
+Key Management: Generates .pem key with optional passphrase
+
+Security Groups: Configures necessary Kubernetes ports (6443, 2379-2380, etc.)
+
+IAM Roles: Creates role with EKS and EC2 permissions
+
+Instance Configuration:
+
+Uses Ubuntu 20.04 AMI
+
+Auto-installs Docker and Kubernetes tools
+
+Configures master/worker nodes using kubeadm
+
+Remote Execution: Uses AWS SSM for command execution
+
+Usage:
+
+Install requirements: pip install boto3
+
+Configure AWS CLI: aws configure
+
+Run script: python k8s_cluster.py
+
+Follow prompts for instance counts and passphrase
+
+Post-Deployment:
+
+Use provided SSH command to access master node
+
+Check cluster status with kubectl get nodes
+
+Install CNI plugin (e.g., Weave Net)
+
+Security Notes:
+
+Key pair is saved with 400 permissions
+
+Security group limits exposure to necessary ports
+
+IAM role follows least-privilege principle
