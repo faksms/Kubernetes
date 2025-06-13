@@ -1,3 +1,7 @@
+#Author: Farhan Khan
+#Purpose: to create EC2 instances and configure a Kubernetes cluster with master/worker nodes.
+#The code handles AWS authentication, security groups, key pairs, and generates connection information
+
 import boto3
 import os
 import time
